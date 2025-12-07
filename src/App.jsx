@@ -4,15 +4,16 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from 'firebase/auth';
 import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query } from 'firebase/firestore';
 
+
 // --- Firebase 設定與初始化 ---
 const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-  apiKey: "AIzaSyACfG6-FYMCyfLg2U1RsCz6aNszmoVKgxg",
-  authDomain: "officedrink-cde31.firebaseapp.com",
-  projectId: "officedrink-cde31",
-  storageBucket: "officedrink-cde31.firebasestorage.app",
-  messagingSenderId: "394889389572",
-  appId: "1:394889389572:web:62948d66440ca8eba73751",
-  measurementId: "G-Q48E0Y61W8"
+  apiKey: "AIzaSyAE4mxlO2_E4WQr_EGP3U7Sz6EKK0cE8pY",
+  authDomain: "officedrink-app.firebaseapp.com",
+  projectId: "officedrink-app",
+  storageBucket: "officedrink-app.firebasestorage.app",
+  messagingSenderId: "1077753450526",
+  appId: "1:1077753450526:web:20284c76394e54e8721e0f",
+  measurementId: "G-7HLJQ53V6Y"
 };
 
 const app = initializeApp(firebaseConfig);
